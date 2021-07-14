@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+    api-test:
+        build: ./api-test
+        ports:
+            - '9500:9500'
+    microservice:
+        build: ./microservice
+        ports:
+            - '9000:9000'
+    web:
+        build: ./web
+        ports:
+            - '80:8000'
